@@ -1,0 +1,171 @@
+digraph {
+    //newrank=true;
+    node [shape="box"]
+    rankdir="LR"
+    ratio="compress"
+
+    subgraph periodo9 {
+        rank=max;
+        label = "Sem Período";
+        {
+            //periodo9 [style=invis]
+            rank=same;
+            rankdir="TB";
+            ACP0900 [label="ACP0900\nAtividades Complementares"]
+            ELL0900 [label="ELL0900\nEletivas Livres - Dentro/Fora do Departamento"]
+            INF0378 [label="INF0378\nOptativas de Formação em Computação"]
+            INF0379 [label="INF0379\nOptativas de Computação"]
+        }
+    }
+
+    subgraph periodo8 {
+        label = "8º Período";
+        {
+            //periodo8 [style=invis]
+            rank=same;
+            rankdir="TB";
+            INF0381 [label="INF0381\nOptativas de Direito para Computação"]
+            INF1951 [label="INF1951\nProjeto Final II"]
+        }
+    }
+
+    subgraph periodo7 {
+        label = "7º Período";
+        {
+            //periodo7 [style=invis]
+            rank=same;
+            rankdir="TB";
+            CRE1175 [label="CRE1175\nÉtica Socioambiental Direitos Humanos"]
+            FIL0300 [label="FIL0300\nOptativas de Filosofia - CB/CTC"]
+            INF1950 [label="INF1950\nProjeto Final I"]
+        }
+    }
+
+    subgraph periodo6 {
+        label = "6º Período";
+        {
+            //periodo6 [style=invis]
+            rank=same;
+            rankdir="TB";
+            INF1014 [label="INF1014\nSeminários"]
+            INF1033 [label="INF1033\nEstágio Supervisionado em Computação"]
+        }
+    }
+
+    subgraph periodo5 {
+        label = "5º Período";
+        {
+            //periodo5 [style=invis]
+            rank=same;
+            rankdir="TB";
+            CRE1141 [label="CRE1141\nÉtica Crista"]
+            INF0377 [label="INF0377\nOptativas de Probabilidade e Estatística"]
+            INF1022 [label="INF1022\nAnalisadores Léxicos e Sintáticos"]
+            INF1028 [label="INF1028\nProjeto e Construção Sistemas"]
+            INF1317 [label="INF1317\nRedes de Computadores"]
+            INF1721 [label="INF1721\nAnálise de Algoritmos"]
+        }
+    }
+
+    subgraph periodo4 {
+        label = "4º Período";
+        {
+            //periodo4 [style=invis]
+            rank=same;
+            rankdir="TB";
+            CRE0710 [label="CRE0710\nOptativas de Cristianismo"]
+            INF1027 [label="INF1027\nTestes e Medidas de Software"]
+            INF1029 [label="INF1029\nIntrodução à Arquitetura de Computadores"]
+            INF1316 [label="INF1316\nSistemas Operacionais"]
+            INF1629 [label="INF1629\nPrincípios de Engenharia de Software"]
+            INF1636 [label="INF1636\nProgramação Orientada Objetos"]
+        }
+    }
+
+    subgraph periodo3 {
+        label = "3º Período";
+        {
+            //periodo3 [style=invis]
+            rank=same;
+            rankdir="TB";
+            INF1383 [label="INF1383\nBanco de Dados"]
+            INF1631 [label="INF1631\nEstruturas Discretas"]
+            INF1010 [label="INF1010\nEstruturas de Dados Avançadas"]
+            INF1301 [label="INF1301\nProgramação Modular"]
+            INF1018 [label="INF1018\nSoftware Básico"]
+            MAT1162 [label="MAT1162\nCálculo a Várias Variáveis I"]
+        }
+    }
+
+    subgraph periodo2 {
+        label = "2º Período";
+        {
+            //periodo2 [style=invis]
+            rank=same;
+            rankdir="TB";
+            CRE1100 [label="CRE1100\nO Humano e o Fenômeno Religioso"]
+            INF0380 [label="INF0380\nOptativas de Comp e Produção de Texto"]
+            INF1403 [label="INF1403\nIntr Int Humano-Computador"]
+            INF1007 [label="INF1007\nProgramação II"]
+            MAT1158 [label="MAT1158\nCálculo a uma Variável B"]
+            MAT1250 [label="MAT1250\nÁlgebra Linear A"]
+        }
+    }
+
+    subgraph periodo1 {
+        label = "1º Período";
+        {
+            //periodo1 [style=invis]
+            rank=same;
+            rankdir="TB";
+            INF1025 [label="INF1025\nIntrodução à Programação"]
+            INF1012 [label="INF1012\nModelagem de Dados"]
+            INF1009 [label="INF1009\nLógica para Computação"]
+            INF1031 [label="INF1031\nIntrodução à Computação"]
+            MAT1157 [label="MAT1157\nCálculo de uma Variável A"]
+            MAT1320 [label="MAT1320\nIntrodução à Matemática Discreta"]
+        }
+    }
+
+    // Pré-requisitos
+    INF1025 -> INF1007// [constraint=false]
+    MAT1157 -> MAT1158// [constraint=false]
+    MAT1157 -> MAT1250// [constraint=false]
+    INF1007 -> INF1383// [constraint=false]
+    INF1012 -> INF1383// [constraint=false]
+    INF1007 -> INF1631// [constraint=false]
+    MAT1320 -> INF1631// [constraint=false]
+    INF1007 -> INF1010// [constraint=false]
+    INF1007 -> INF1301// [constraint=false]
+    INF1007 -> INF1018// [constraint=false]
+    MAT1158 -> MAT1162// [constraint=false]
+    CRE1100 -> CRE0710// [constraint=false]
+    INF1301 -> INF1027// [constraint=false]
+    INF1018 -> INF1029// [constraint=false]
+    INF1018 -> INF1316// [constraint=false]
+    INF1301 -> INF1629// [constraint=false]
+    INF1301 -> INF1636// [constraint=false]
+    CRE0710 -> CRE1141// [constraint=false]
+    INF1025 -> INF0377// [constraint=false]
+    MAT1158 -> INF0377// [constraint=false]
+    INF1007 -> INF1022// [constraint=false]
+    INF1009 -> INF1022// [constraint=false]
+    INF1027 -> INF1028// [constraint=false]
+    INF1383 -> INF1028// [constraint=false]
+    INF1636 -> INF1028// [constraint=false]
+    INF1316 -> INF1317// [constraint=false]
+    INF1010 -> INF1721// [constraint=false]
+    INF1631 -> INF1721// [constraint=false]
+    INF1028 -> INF1033// [constraint=false]
+    CRE1141 -> CRE1175// [constraint=false]
+    INF1950 -> INF1951// [constraint=false]
+
+    // periodo1 -> periodo2 [style=invis]
+    // periodo2 -> periodo3 [style=invis]
+    // periodo3 -> periodo4 [style=invis]
+    // periodo4 -> periodo5 [style=invis]
+    // periodo5 -> periodo6 [style=invis]
+    // periodo6 -> periodo7 [style=invis]
+    // periodo7 -> periodo8 [style=invis]
+    // periodo8 -> semperiodo [style=invis]
+}

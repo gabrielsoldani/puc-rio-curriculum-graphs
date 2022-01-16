@@ -1,0 +1,97 @@
+digraph {
+    node [shape="box"]
+    rankdir="TB"
+    packmode="graph"
+
+    // 1º período
+    INF1025 [label="INF1025\nIntrodução à Programação"]
+    INF1012 [label="INF1012\nModelagem de Dados"]
+    INF1009 [label="INF1009\nLógica para Computação"]
+    INF1031 [label="INF1031\nIntrodução à Computação"]
+    MAT1157 [label="MAT1157\nCálculo de uma Variável A"]
+    MAT1320 [label="MAT1320\nIntrodução à Matemática Discreta"]
+
+    // 2º período
+    CRE1100 [label="CRE1100\nO Humano e o Fenômeno Religioso"]
+    INF0380 [label="INF0380\nOptativas de Comp e Produção de Texto"]
+    INF1403 [label="INF1403\nIntr Int Humano-Computador"]
+    INF1007 [label="INF1007\nProgramação II"]
+    MAT1158 [label="MAT1158\nCálculo a uma Variável B"]
+    MAT1250 [label="MAT1250\nÁlgebra Linear A"]
+
+    // 3º período
+    INF1383 [label="INF1383\nBanco de Dados"]
+    INF1631 [label="INF1631\nEstruturas Discretas"]
+    INF1010 [label="INF1010\nEstruturas de Dados Avançadas"]
+    INF1301 [label="INF1301\nProgramação Modular"]
+    INF1018 [label="INF1018\nSoftware Básico"]
+    MAT1162 [label="MAT1162\nCálculo a Várias Variáveis I"]
+
+    // 4º período
+    CRE0710 [label="CRE0710\nOptativas de Cristianismo"]
+    INF1027 [label="INF1027\nTestes e Medidas de Software"]
+    INF1029 [label="INF1029\nIntrodução à Arquitetura de Computadores"]
+    INF1316 [label="INF1316\nSistemas Operacionais"]
+    INF1629 [label="INF1629\nPrincípios de Engenharia de Software"]
+    INF1636 [label="INF1636\nProgramação Orientada Objetos"]
+
+    // 5º período
+    CRE1141 [label="CRE1141\nÉtica Crista"]
+    INF0377 [label="INF0377\nOptativas de Probabilidade e Estatística"]
+    INF1022 [label="INF1022\nAnalisadores Léxicos e Sintáticos"]
+    INF1028 [label="INF1028\nProjeto e Construção Sistemas"]
+    INF1317 [label="INF1317\nRedes de Computadores"]
+    INF1721 [label="INF1721\nAnálise de Algoritmos"]
+
+    // 6º período
+    INF1014 [label="INF1014\nSeminários"]
+    INF1033 [label="INF1033\nEstágio Supervisionado em Computação"]
+
+    // 7º período
+    CRE1175 [label="CRE1175\nÉtica Socioambiental Direitos Humanos"]
+    FIL0300 [label="FIL0300\nOptativas de Filosofia - CB/CTC"]
+    INF1950 [label="INF1950\nProjeto Final I"]
+
+    // 8º período
+    INF0381 [label="INF0381\nOptativas de Direito para Computação"]
+    INF1951 [label="INF1951\nProjeto Final II"]
+
+    // Sem período
+    ACP0900 [label="ACP0900\nAtividades Complementares"]
+    ELL0900 [label="ELL0900\nEletivas Livres - Dentro/Fora do Departamento"]
+    INF0378 [label="INF0378\nOptativas de Formação em Computação"]
+    INF0379 [label="INF0379\nOptativas de Computação"]
+
+    // Pré-requisitos
+    INF1025 -> INF1007
+    MAT1157 -> MAT1158
+    MAT1157 -> MAT1250
+    INF1007 -> INF1383
+    INF1012 -> INF1383
+    INF1007 -> INF1631
+    MAT1320 -> INF1631
+    INF1007 -> INF1010
+    INF1007 -> INF1301
+    INF1007 -> INF1018
+    MAT1158 -> MAT1162
+    CRE1100 -> CRE0710
+    INF1301 -> INF1027
+    INF1018 -> INF1029
+    INF1018 -> INF1316
+    INF1301 -> INF1629
+    INF1301 -> INF1636
+    CRE0710 -> CRE1141
+    INF1025 -> INF0377
+    MAT1158 -> INF0377
+    INF1007 -> INF1022
+    INF1009 -> INF1022
+    INF1027 -> INF1028
+    INF1383 -> INF1028
+    INF1636 -> INF1028
+    INF1316 -> INF1317
+    INF1010 -> INF1721
+    INF1631 -> INF1721
+    INF1028 -> INF1033
+    CRE1141 -> CRE1175
+    INF1950 -> INF1951
+}
