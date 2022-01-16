@@ -2,8 +2,8 @@
 .SUFFIXES:
 
 ALL = \
-	ccp/curriculo-0.svg \
-	ccp/curriculo-0-por-periodo.svg
+	ccp/curriculo-1.svg \
+	ccp/curriculo-1-por-periodo.svg
 
 all: $(ALL)
 .PHONY: all

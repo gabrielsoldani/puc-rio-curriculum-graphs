@@ -4,12 +4,12 @@ Esse repositório contém grafos das disciplinas do curso de Ciência da Computa
 
 ## Ciência da Computação
 
-### Currículo 0
+### Currículo 1
 
-#### Organizado por dependências
+#### Organizado por pré-requisitos
 
-[![Grafo de disciplinas](ccp/curriculo-0.svg "Currículo 0")](ccp/curriculo-0.svg)
+[![Grafo de disciplinas](ccp/curriculo-1.svg "Currículo 0")](ccp/curriculo-1.svg)
 
 #### Organizado por período
 
-[![Grafo de disciplinas](ccp/curriculo-0-por-periodo.svg "Currículo 0")](ccp/curriculo-0-por-periodo.svg)
+[![Grafo de disciplinas](ccp/curriculo-1-por-periodo.svg "Currículo 0")](ccp/curriculo-1-por-periodo.svg)
